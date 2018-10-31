@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// console.log("app.js is running!!!");
+import IndecisionApp from './components/IndecisionApp';
 
 
-const template= <p>this is from jsx!!</p>;
-ReactDOM.render(template, document.getElementById('app'))
+ReactDOM.render(<IndecisionApp options={[2,3,4,5,0,6]}/>,document.getElementById('app'));
