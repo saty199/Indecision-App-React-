@@ -2,33 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import IndecisionApp from './components/IndecisionApp';
+import 'normalize.css/normalize.css';
+import './styles/styles.scss';
 
 
-// ReactDOM.render(<IndecisionApp options={[2,3,4,5,0,6]}/>,document.getElementById('app'));
-
-
-const Layout= (props)=>{
-    return(
-        <div>
-        <h1>this is header</h1>
-     {props.children}
-        <p>this is para</p>
-        </div>
-    )
-}
-
-
-ReactDOM.render((<Layout>
-    <div>
-    <h2>hello saty</h2>
-    <h1>title page</h1>
-    <p>paragraph</p>
-    </div>
-    </Layout>),document.getElementById('app'));
-
-
-
-
+ReactDOM.render(<IndecisionApp options={[2,3,4,5,0,6]}/>,document.getElementById('app'));
 
 
 
