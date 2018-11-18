@@ -1,7 +1,8 @@
 .header{
     background: $light-blue;
     color: red;
-    margin-bottom: $xl-size;
+    // margin-bottom: $xl-size;
+    margin: 0 0 $m-size 0;
     padding: $m-size 0;
 }
 
@@ -14,4 +15,10 @@
     font-size: $m-size;
     font-weight: 500;
     margin: 0;
+}
+
+@media (min-width : $desktop-breakpoint){
+    .header{
+        margin: 0 0 $xl-size 0;
+    }
 }

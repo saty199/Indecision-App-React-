@@ -7,7 +7,8 @@
     color: $off-white;
     font-size: $l-size;
     font-weight: bold;
-    margin-bottom: $xl-size;
+    // margin-bottom: $xl-size;
+    margin: 0 0 $m-size 0;
     padding: 2.4rem;
     width: 100%
 }
@@ -31,4 +32,10 @@
     border: none;
     color: $off-white;
     padding: 0;
+}
+
+@media(min-width: $desktop-breakpoint){
+    .big-button{
+        margin: 0 0 $xl-size 0;
+    }
 }
